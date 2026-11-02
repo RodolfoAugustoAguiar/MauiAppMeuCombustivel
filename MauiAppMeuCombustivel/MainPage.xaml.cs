@@ -18,10 +18,14 @@
 
                 if(etanol <= (gasolina * 0.7) )
                 {
-                    msg = "O etanol está compensando.";
+                    msg = "O etanol está compensando para o seu "
+                        + txt_marca.Text + " "
+                        + txt_modelo.Text + ".";
                 } else
                 { 
-                    msg = "A gasolina está compensndo.";
+                    msg = "A gasolina está compensando para o seu "
+                        + txt_marca.Text + " "
+                        + txt_modelo.Text + ".";
                 }
                    
                 DisplayAlert("Calculado", msg, "OK");
